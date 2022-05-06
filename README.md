@@ -36,6 +36,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Inspiration
 
-Creative developper portfolio => https://www.richardekwonye.com/
+Creative developper portfolio => https://www.richardekwonye.com/ 
 Digital Art Director portfolio => https://www.margheritafortuna.com/
 Migra font page feather theme => https://pangrampangram.com/products/migra
