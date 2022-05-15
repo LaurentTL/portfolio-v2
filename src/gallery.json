@@ -5,6 +5,8 @@
         "desc": "My first personnal portfolio. It use to be for a moment a large space of many types experiences, like vanilla js animations",
         "position": "Front-end development",
         "date": "August 2021",
+        "pics": [],
+        "videos": [],
         "url": "http://laurenttreuil.herokuapp.com"
     },
     {
@@ -13,6 +15,8 @@
         "desc": "Single static page build for the <a href=\"https://www.youtube.com/watch?v=JTG6VoLJuAc\">BenjaminCode challenge</a>",
         "position": "Front-end development",
         "date": "Dec 2021",
+        "pics": [],
+        "videos": [],
         "url": "#"
     },
     {
@@ -21,6 +25,8 @@
         "desc": "Wordpress application made for a Video production company with a theme.",
         "position": "Web development",
         "date": "March 2022",
+        "pics": [],
+        "videos": [],
         "url": "http://prep.dm-gestion_syndics.fr"
     },
     {
@@ -29,6 +35,8 @@
         "desc": "Website for a rental management agency and condominium trustee. This application is realese with a wp residence theme and demos and some graphical adaptations",
         "position": "Project management and development",
         "date": "Avril 2022",
+        "pics": [],
+        "videos": [],
         "url": "http://prep.dm-gestion_syndics.fr"
     },
     {
@@ -37,6 +45,8 @@
         "desc": "Application build with a wordpress full custom theme for Autonoveo and a duplicated child theme for VOptimum.",
         "position": "Full stack development",
         "date": "May 2022",
+        "pics": [],
+        "videos": [],
         "url": "http://prep.autonoveo.fr"
     }
 ]
