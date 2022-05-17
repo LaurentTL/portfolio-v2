@@ -1,7 +1,40 @@
-.wraper {
+@use '../../../styles/settings/colors' as c;
+@use '../../../styles/settings/fonts' as f;
+
+
+
+.menu {
     width: fit-content;
-    height: fit-content;
 
-    &__menu {}
+    &__menuFullSize {
 
+        display: flex;
+        flex-direction: row;
+        gap: .7rem;
+        color: c.$font-color-1;
+        font-size: f.$p-font-size;
+        text-transform: capitalize;
+    }
+
+    &__menuSmall {
+        font-family: PP neue montreal;
+        font-weight: 500;
+        color: c.$font-color-1;
+        display: none;
+        font-size: f.$p-font-size;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+
+        &__menuFullSize {
+
+            display: none;
+        }
+
+        &__menuSmall {
+            display: inline-block;
+        }
+    }
 }

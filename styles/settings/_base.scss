@@ -1,6 +1,11 @@
 @use '../../public/assets/fonts/Neue_Montreal/neue-montreal-stylesheet.css';
 @use '../../public/assets/fonts/Migra/migra-stylesheet.css';
 @use 'colors';
+
+:root {
+    font-size: 16px;
+}
+
 html,
 body {
     padding: 0;
@@ -12,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    overscroll-behavior: none;
 }
 
 a {
@@ -21,4 +27,17 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Migra;
+}
+
+p,
+a {
+    font-family: PP Neue Montreal;
+    font-weight: 400;
 }

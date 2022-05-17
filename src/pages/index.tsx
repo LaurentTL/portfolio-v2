@@ -2,7 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.scss'
+import Banner from '../components/banner/Banner'
 import Header from '../components/header/Header'
+import MobileMenu from '../components/mobile-menu/MobileMenu'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +16,8 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <Header />
+        <Banner />
+        <MobileMenu />
       </main>
     </div>
   )

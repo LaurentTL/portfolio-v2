@@ -2,20 +2,25 @@
 @use '../../../styles/settings/fonts' as f;
 @use '../../../styles/settings/variables' as v;
 
-.header {
-    width: 100%;
-    height: fit-content;
-    padding: 1.4rem v.$general-side-padding 1.4rem v.$general-side-padding;
-    display: flex;
-    justify-content: space-between;
+.mobileMenu {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     inset: 0;
-    z-index: 30;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 3rem;
+    background-color: c.$bg-color-3;
+    padding: 0 v.$general-side-padding 3rem v.$general-side-padding;
 
-    &__title {
+    &__nav {
         color: c.$font-color-1;
-        text-transform: capitalize;
-        font-size: f.$p-font-size;
+        font-size: f.$menu-open-f-size;
+        z-index: 20;
+        text-transform: uppercase;
+        width: 100%;
+        height: fit-content;
     }
 
     &__available {
@@ -25,6 +30,8 @@
         font-weight: 500;
         display: flex;
         flex-direction: column;
+        text-transform: uppercase;
+        font-size: f.$menu-open-f-size-2;
     }
 
     &__paris {
@@ -34,24 +41,13 @@
         font-weight: 500;
         display: flex;
         flex-direction: column;
-    }
-
-    .charSplit {
-        color: red;
+        text-transform: uppercase;
+        font-size: f.$menu-open-f-size-2;
     }
 }
 
 @media screen and (max-width: 900px) {
-
-    .header {
-
-        &__available {
-            display: none;
-        }
-
-        &__paris {
-            display: none;
-        }
+    .mobileMenu {
+        display: flex;
     }
-
 }
