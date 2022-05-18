@@ -1,0 +1,9 @@
+.reveal {
+    display: flex;
+    overflow: hidden;
+
+    span {
+        height: 100%;
+        align-self: baseline;
+    }
+}
