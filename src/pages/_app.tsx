@@ -1,13 +1,9 @@
 import '../../styles/globals.scss'
 import type { AppProps } from 'next/app'
-import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Component {...pageProps} />
-      {/* <Script src='../utlis/split.tsx'></Script> */}
-    </>
+    <Component {...pageProps} />
   )
 }
 

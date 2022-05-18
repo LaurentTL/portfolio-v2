@@ -16,8 +16,16 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     min-height: 100vh;
     overscroll-behavior: none;
+}
+
+#__Next,
+.container,
+main {
+    width: inherit;
+    height: inherit;
 }
 
 a {
