@@ -1,0 +1,19 @@
+@use '../../../styles/settings/colors' as c;
+@use '../../../styles/settings/fonts' as f;
+
+.counter {
+    overflow: hidden;
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+
+    span {
+        font-family: PP neue montreal;
+        color: white;
+        font-size: f.$counter-font-size;
+        font-weight: 500;
+    }
+}

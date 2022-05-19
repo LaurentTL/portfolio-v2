@@ -2,19 +2,20 @@ import React from 'react'
 import SplitCharComp from '../split-char-component/SplitCharComp'
 import SplitChar from '../split/SplitChar'
 import styles from './Banner.module.scss'
+import Image from 'next/image'
 import gsap from 'gsap'
 
 function Banner() {
     return (
         <div className={styles.banner}>
-            <h1 className={styles.banner__title}>
+            <h2 className={styles.banner__title}>
                 <SplitCharComp>
                     <span>Front-End</span>
                 </SplitCharComp>
                 <SplitCharComp>
-                    <span>Developer</span>
+                    <span>Developper</span>
                 </SplitCharComp>
-            </h1>
+            </h2>
         </div>
     )
 }

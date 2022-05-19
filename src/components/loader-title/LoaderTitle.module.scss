@@ -1,0 +1,11 @@
+@use '../../../styles/settings/fonts' as f;
+
+.loaderTitle {
+    color: white;
+    font-family: PP neue montreal;
+    display: flex;
+    flex-direction: column;
+    font-size: f.$big-title;
+    font-weight: 500;
+    text-transform: uppercase;
+}

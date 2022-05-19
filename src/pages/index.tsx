@@ -8,6 +8,8 @@ import MobileMenu from '../components/mobile-menu/MobileMenu'
 import gsap from 'gsap'
 
 const Home: NextPage = () => {
+
+
   return (
     <div className="container">
       <Head>

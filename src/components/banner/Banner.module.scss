@@ -9,19 +9,20 @@
     padding: 0 v.$general-side-padding 0 v.$general-side-padding;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
     &__title {
-        text-justify: end;
-        font-size: 5rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 8vw;
         color: c.$font-color-1;
         text-align: end;
         text-transform: capitalize;
         font-weight: 300;
+        margin-bottom: 10rem;
 
-        :first-child {
-            font-size: 8rem;
-        }
     }
 
 }

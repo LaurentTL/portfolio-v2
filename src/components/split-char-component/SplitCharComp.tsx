@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { gsap } from 'gsap'
+import React, { useEffect, useState, useRef, useLayoutEffect } from 'react'
 import SpanElement from '../span-element/SpanElement'
 import styles from './SplitCharComp.module.scss'
 
@@ -8,18 +7,15 @@ function SplitCharComp(props: any) {
     let text = children.props.children
     let textArr = Array.from(text).map((char, index) => {
         let from = {
-            y: 200,
-            stagger: 0.5
+            y: 180,
         }
         let to = {
             y: 0,
-            duration: 1.5
+            delay: () => {
+                return index * .1
+            },
+            ease: "power4out",
         }
-        let obj = {
-            duration: 1,
-            y: 200,
-            stagger: 0.2
-        };
         return <SpanElement key={`${char}${index}`} char={char} from={from} to={to} />
     })
 

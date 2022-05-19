@@ -1,9 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 let SpanElement = (props) => {
     // wait until DOM has been rendered
-    useEffect(() => {
+    useLayoutEffect(() => {
         gsap.fromTo(ref.current, props.from, props.to);
     });
     let ref = useRef(null);
