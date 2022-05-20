@@ -2,18 +2,14 @@ import React from 'react'
 import CounterSpanElement from '../Counter-span-element/CounterSpanElement'
 import styles from './Counter.module.scss'
 
-function Counter() {
+function Counter(props: any) {
+    let children = props.children
+    let numbers = [0, 36, 67, 100]
     return (
         <div className={styles.counter}>
-            <CounterSpanElement>
-                100
-            </CounterSpanElement>
-            <CounterSpanElement>
-                50
-            </CounterSpanElement>
-            <CounterSpanElement>
-                0
-            </CounterSpanElement>
+            {
+                numbers.map((num) => <CounterSpanElement key={num}>{num}</CounterSpanElement>)
+            }
         </div>
     )
 }

@@ -1,1 +1,10 @@
-.counterSpanElement {}
+@use '../../../styles/settings/colors' as c;
+@use '../../../styles/settings/fonts' as f;
+
+.counterSpanElement {
+
+    span {
+        color: white;
+        font-family: pp nueue montreal;
+    }
+}
