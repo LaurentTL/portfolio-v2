@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
 import '../../styles/globals.scss'
+import { useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
-import Router from "next/router"
 import Loader from '../components/loader/Loader'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -17,10 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Loader />
-      {/* {loading ? (<Loader />) :
+      {loading ? (<Loader />) :
         <Component {...pageProps} />
-      } */}
+      }
     </>
   )
 }

@@ -4,13 +4,13 @@
 
 :root {
     font-size: 16px;
+    pointer-events: none;
 }
 
 html,
 body {
     padding: 0;
     margin: 0;
-    font-family: Migra;
     font-weight: 800;
     background: url('https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Header-Migra.jpg?v=51217023710603611861627062584');
     background-position: top center;

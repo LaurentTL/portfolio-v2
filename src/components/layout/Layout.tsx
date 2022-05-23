@@ -1,11 +1,14 @@
-import Footer from '../header/Header'
-
+import Head
+    from "next/head";
 export default function Layout({ children }) {
+
     return (
         <>
-            <Header />
-            <main>{children}</main>
-            <Footer />
+            <Head>
+                <link rel="prelaod" href="/public/assets/fonts/Migra/migra-stylesheet.css" as="font" />
+                <link rel="preload" href="/public/assets/fonts/Neue_Montreal/neue-montreal-stylesheet.css" as="font" />
+            </Head>
+            {children}
         </>
-    )
+    );
 }

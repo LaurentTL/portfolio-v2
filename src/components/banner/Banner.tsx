@@ -10,6 +10,9 @@ function Banner() {
         <div className={styles.banner}>
             <h2 className={styles.banner__title}>
                 <SplitCharComp>
+                    <span>Passionate</span>
+                </SplitCharComp>
+                <SplitCharComp>
                     <span>Front-End</span>
                 </SplitCharComp>
                 <SplitCharComp>

@@ -2,22 +2,20 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.scss'
+import { useRef } from 'react'
 import Banner from '../components/banner/Banner'
 import Header from '../components/header/Header'
 import MobileMenu from '../components/mobile-menu/MobileMenu'
 import gsap from 'gsap'
+import Link from 'next/Link'
+import Cursor from '../components/cursor/Cursor'
 
 const Home: NextPage = () => {
 
-
   return (
     <div className="container">
-      <Head>
-        <title>Laurent Treuil</title>
-        <meta name="description" content="Front End web developer portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main className="main">
+        <Cursor />
         <Header />
         <Banner />
         {/* <MobileMenu /> */}
