@@ -1,8 +1,14 @@
 @use '../../../styles/settings/colors' as c;
 
 .cursor {
+    position: absolute;
     width: 50px;
     aspect-ratio: 1;
     border: 1px solid c.$font-color-1;
     border-radius: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.cursor--link-hovered {
+    transform: translate(-50%, -50%) scale(1.25);
 }

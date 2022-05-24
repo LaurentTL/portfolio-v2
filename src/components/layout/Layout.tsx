@@ -1,14 +1,23 @@
-import Head
-    from "next/head";
+import React from 'react'
+import Header from "../header/Header";
+import Cursor from "../cursor/Cursor"
+import Footer from "../footer/Footer";
+
 export default function Layout({ children }) {
 
     return (
-        <>
-            <Head>
-                <link rel="prelaod" href="/public/assets/fonts/Migra/migra-stylesheet.css" as="font" />
-                <link rel="preload" href="/public/assets/fonts/Neue_Montreal/neue-montreal-stylesheet.css" as="font" />
-            </Head>
-            {children}
-        </>
+        <div className="container">
+
+            <Header />
+            <Cursor />
+            <main className="main" >{children}</main>
+            <Footer />
+            <style jsx>{`
+                .container {
+                    width: 100%;
+                }
+            `}</style>
+        </div>
+
     );
 }

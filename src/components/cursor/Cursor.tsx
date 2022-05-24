@@ -1,17 +1,34 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Cursor.module.scss'
 
-function Cursor() {
+const Cursor = () => {
+    const [position, setPosition] = useState({ x: 0, y: 0 })
+    useEffect(() => {
+        const addEventListeners = () => {
+            document.addEventListener('mousemove', mMove);
+        };
 
-    let cursorRef = useRef()
+        const removeEventListeners = () => {
+            document.removeEventListener('mousemove', mMove);
 
-    let cursor = e => {
-        console.log(cursorRef.current)
-    }
+        };
+
+        const mMove = (el) => {
+            setPosition({ x: el.clientX, y: el.clientY });
+        };
+
+        addEventListeners();
+        return () => removeEventListeners();
+    }, []);
 
     return (
-        <div onMouseMove={cursor} className={styles.cursor} ref={cursorRef} />
-    )
-}
-
+        <div
+            className={styles.cursor}
+            style={{
+                left: `${position.x}px`,
+                top: `${position.y}px`,
+            }}
+        />
+    );
+};
 export default Cursor

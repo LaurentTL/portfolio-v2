@@ -6,12 +6,12 @@ export default function Menu() {
     return (
         <nav className={styles.menu}>
             <div className={styles.menu__menuFullSize}>
-                <Link href="/about">
+                {/* <Link href="/about">
                     <a className="about">about</a>
                 </Link>
                 <Link href="/works">
                     <a>works</a>
-                </Link>
+                </Link> */}
                 <Link href="/contact">
                     <a>contact</a>
                 </Link>

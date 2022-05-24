@@ -2,8 +2,17 @@
 @use '../../../styles/settings/fonts' as f;
 @use '../../../styles/settings/variables' as v;
 
-.footer {
+.description {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 1.4rem v.$general-side-padding 1.4rem v.$general-side-padding;
+
+    p {
+        color: c.$font-color-1;
+        font-size: f.$p-font-size-2;
+        text-transform: uppercase;
+        font-family: Migra;
+    }
 }

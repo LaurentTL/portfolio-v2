@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Footer() {
     return (
-        <footer className={styles.footer} ref={el}>
+        <footer className={styles.footer}>
             <Link href="/">
                 <a className={styles.header__title}> Laurent Treuil</a>
             </Link>
@@ -18,6 +18,15 @@ function Footer() {
                 <Link href="https://github.com/LaurentTL">
                     <a>Github</a>
                 </Link>
+            </div>
+            <div className={styles.insp}>
+                <p>
+                    Inspired mainly by
+                    <Link href="https://www.richardekwonye.com/">
+                        <a>Richard Ekwonye's</a>
+                    </Link>
+                    portfolio.
+                </p>
             </div>
 
         </footer>
